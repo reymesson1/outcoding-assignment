@@ -1,8 +1,6 @@
 # outcoding-assignment
  iOS App Native
-
-Certainly! Below is a template for a Git README file that explains the technology, methodology, and details about the app:
-
+ 
 ---
 
 # Cat Image Viewer App
