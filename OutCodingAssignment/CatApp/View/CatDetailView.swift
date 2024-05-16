@@ -2,7 +2,7 @@
 //  CatDetailView.swift
 //  OutCodingAssignment
 //
-//  Created by user258061 on 5/15/24.
+//  Created by Rey Messon on 5/15/24.
 //
 
 import Foundation
@@ -15,7 +15,7 @@ struct CatDetailView: View {
         VStack {
             Text("Cat \(catImage.id)")
                 .font(.title)
-            RemoteImage(url: catImage.imageUrl) // Use imageUrl instead of url
+            RemoteImage(url: catImage.imageUrl)
                 .aspectRatio(contentMode: .fit)
                 .padding()
             Text("Tags: \(catImage.tags.joined(separator: ", "))")

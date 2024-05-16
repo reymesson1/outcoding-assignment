@@ -2,7 +2,7 @@
 //  RemoteImage.swift
 //  OutCodingAssignment
 //
-//  Created by user258061 on 5/15/24.
+//  Created by Rey Messon on 5/15/24.
 //
 
 import Foundation
