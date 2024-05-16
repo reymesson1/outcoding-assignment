@@ -11,14 +11,21 @@ import SwiftUI
 struct RemoteImage: View {
     private let url: URL
     @State private var image: Image? = nil
+    @State private var width: CGFloat
+    @State private var height: CGFloat
     
-    init(url: URL) {
+    init(url: URL, width: CGFloat, height: CGFloat) {
         self.url = url
+        self.width = width
+        self.height = height
     }
     
     var body: some View {
         if let image = image {
-            image.resizable()
+            image
+                .resizable()
+                .scaledToFill()
+                .frame(width: width, height: height)
         } else {
             ProgressView()
                 .onAppear {
