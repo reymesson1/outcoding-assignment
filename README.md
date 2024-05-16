@@ -34,6 +34,7 @@ This SwiftUI app fetches cat images from the [Cataas API](https://cataas.com/) a
 - **Pagination**: Implement pagination to fetch and display more cat images as the user scrolls.
 - **Image Caching**: Implement image caching to improve performance and reduce redundant network requests.
 - **UI Enhancements**: Add more visually appealing UI elements and animations to enhance the user experience.
+- **Localizable**: Add more languages to show the app more internationality and give the user a better experience.
 
 
 ## License
