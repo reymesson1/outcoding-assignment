@@ -1,7 +1,3 @@
-# outcoding-assignment
- iOS App Native
- 
----
 
 # Cat Image Viewer App
 
