@@ -42,7 +42,3 @@ This SwiftUI app fetches cat images from the [Cataas API](https://cataas.com/) a
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-Feel free to customize the README with additional details or sections as needed for your project!
