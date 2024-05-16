@@ -39,8 +39,6 @@ This SwiftUI app fetches cat images from the [Cataas API](https://cataas.com/) a
 - **Image Caching**: Implement image caching to improve performance and reduce redundant network requests.
 - **UI Enhancements**: Add more visually appealing UI elements and animations to enhance the user experience.
 
-## Credits
-- This app is inspired by the [Cataas API](https://cataas.com/), which provides a collection of cat images for developers to use in their projects.
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
