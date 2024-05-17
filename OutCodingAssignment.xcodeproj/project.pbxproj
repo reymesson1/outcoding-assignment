@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D409391F2BF6EFCC004F97BF /* CatViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D409391E2BF6EFCC004F97BF /* CatViewModelTests.swift */; };
 		D48581092BF6474E00886E7B /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48581082BF6474E00886E7B /* SplashScreen.swift */; };
 		D485810B2BF651F300886E7B /* SplashScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D485810A2BF651F300886E7B /* SplashScreenTests.swift */; };
+		D485810D2BF67AAF00886E7B /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D485810C2BF67AAF00886E7B /* CustomTabBar.swift */; };
+		D485810F2BF67D1E00886E7B /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D485810E2BF67D1E00886E7B /* SecondView.swift */; };
+		D48581112BF67D3100886E7B /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48581102BF67D3100886E7B /* ThirdView.swift */; };
 		D4E00CE62BF54084004B9E59 /* OutCodingAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E00CE52BF54084004B9E59 /* OutCodingAssignmentApp.swift */; };
 		D4E00CE82BF54084004B9E59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E00CE72BF54084004B9E59 /* ContentView.swift */; };
 		D4E00CEA2BF54086004B9E59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4E00CE92BF54086004B9E59 /* Assets.xcassets */; };
@@ -41,8 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D409391E2BF6EFCC004F97BF /* CatViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewModelTests.swift; sourceTree = "<group>"; };
 		D48581082BF6474E00886E7B /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		D485810A2BF651F300886E7B /* SplashScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenTests.swift; sourceTree = "<group>"; };
+		D485810C2BF67AAF00886E7B /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		D485810E2BF67D1E00886E7B /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		D48581102BF67D3100886E7B /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 		D4E00CE22BF54084004B9E59 /* OutCodingAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutCodingAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E00CE52BF54084004B9E59 /* OutCodingAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutCodingAssignmentApp.swift; sourceTree = "<group>"; };
 		D4E00CE72BF54084004B9E59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,6 +143,7 @@
 			children = (
 				D4E00CF72BF54086004B9E59 /* OutCodingAssignmentTests.swift */,
 				D485810A2BF651F300886E7B /* SplashScreenTests.swift */,
+				D409391E2BF6EFCC004F97BF /* CatViewModelTests.swift */,
 			);
 			path = OutCodingAssignmentTests;
 			sourceTree = "<group>";
@@ -154,6 +163,9 @@
 				D4E00D192BF5436E004B9E59 /* Template */,
 				D4E00D102BF542A4004B9E59 /* HomeView.swift */,
 				D4E00D172BF5434E004B9E59 /* CatDetailView.swift */,
+				D485810C2BF67AAF00886E7B /* CustomTabBar.swift */,
+				D485810E2BF67D1E00886E7B /* SecondView.swift */,
+				D48581102BF67D3100886E7B /* ThirdView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -326,8 +338,11 @@
 				D4E00D182BF5434E004B9E59 /* CatDetailView.swift in Sources */,
 				D4E00D232BF5448D004B9E59 /* ViewModel.swift in Sources */,
 				D4E00D1D2BF543AB004B9E59 /* CatImage.swift in Sources */,
+				D485810D2BF67AAF00886E7B /* CustomTabBar.swift in Sources */,
 				D4E00D112BF542A4004B9E59 /* HomeView.swift in Sources */,
+				D485810F2BF67D1E00886E7B /* SecondView.swift in Sources */,
 				D4E00CE82BF54084004B9E59 /* ContentView.swift in Sources */,
+				D48581112BF67D3100886E7B /* ThirdView.swift in Sources */,
 				D4E00D1B2BF54383004B9E59 /* RemoteImage.swift in Sources */,
 				D4E00CE62BF54084004B9E59 /* OutCodingAssignmentApp.swift in Sources */,
 			);
@@ -338,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D485810B2BF651F300886E7B /* SplashScreenTests.swift in Sources */,
+				D409391F2BF6EFCC004F97BF /* CatViewModelTests.swift in Sources */,
 				D4E00CF82BF54086004B9E59 /* OutCodingAssignmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

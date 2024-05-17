@@ -10,6 +10,7 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject var viewModel = CatViewModel()
+    @State var isSelected: Int = 0
         
     var body: some View {
         NavigationView {
@@ -25,6 +26,8 @@ struct HomeView: View {
                         .shadow(radius: 10)
                 }
             }
+            CustomTabBar(selectedIndex: $isSelected)
+            
         }
         .onAppear {
             self.viewModel.fetchCatImages()
