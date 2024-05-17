@@ -4,6 +4,9 @@
 ## Overview
 This SwiftUI app fetches cat images from the [Cataas API](https://cataas.com/) and displays them in a list. Users can view each cat image in detail, including tags associated with the image.
 
+![image](https://github.com/reymesson1/outcoding-assignment/assets/30162161/f1f8e57e-3fc2-4296-aa1e-22fca620a42e)
+
+
 ## Features
 - Fetches cat images from the Cataas API.
 - Displays a list of cat images with navigation to view details.
