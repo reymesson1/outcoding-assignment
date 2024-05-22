@@ -39,6 +39,8 @@ This SwiftUI app fetches cat images from the [Cataas API](https://cataas.com/) a
 - **UI Enhancements**: Add more visually appealing UI elements and animations to enhance the user experience.
 - **Localizable**: Add more languages to show the app more internationality and give the user a better experience.
 
+- **Eskeleton**: It's when the data that's coming from the backend isn't ready yet. But you need to draw the place where the data will filled.
+
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
