@@ -41,6 +41,8 @@ This SwiftUI app fetches cat images from the [Cataas API](https://cataas.com/) a
 
 - **Eskeleton**: It's when the data that's coming from the backend isn't ready yet. But you need to draw the place where the data will filled.
 
+- **Factory method** In order to delegate the responsibility of create a component we are going to use this design pattern method and also to follow the SOLID principle rules to apply the dependency injection.
+
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
