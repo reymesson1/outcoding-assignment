@@ -2,7 +2,7 @@
 //  CustomTabBar.swift
 //  esimflys
 //
-//  Created by user258061 on 5/22/24.
+//  Created by Rey Messon on 5/22/24.
 //
 
 import Foundation
@@ -12,24 +12,21 @@ struct CustomTabBar: View {
     @State private var selectedIndex = 0
     
     let tabs = [
-        TabBarItem(icon: "fa-cart-shopping", label: "Store", content: "StoreView"),
-        TabBarItem(icon: "fa-sim-card", label: "My eSim", content: "MyEsimView"),
-        TabBarItem(icon: "fa-book", label: "Instruction", content: "InstructionView"),
-        TabBarItem(icon: "fa-account", label: "Account", content: "AccountView")
+        TabBarItem(icon: "fa-cat-one", label: "Home", content: "CatHomeView"),
+        TabBarItem(icon: "fa-message", label: "Messages", content: "MessageView"),
+        TabBarItem(icon: "fa-cat-head", label: "Profile", content: "ProfileView")
     ]
+
     var body: some View {
         ZStack {
             Color.white.edgesIgnoringSafeArea(.all)
             VStack(spacing: 0) {
-                if tabs[selectedIndex].content == "StoreView" {
+                if tabs[selectedIndex].content == "CatHomeView" {
                     CatHomeView()
-                } else if tabs[selectedIndex].content == "MyEsimView" {
+                } else if tabs[selectedIndex].content == "MessageView" {
                     
                     EmptyView()
-                }else if tabs[selectedIndex].content == "InstructionView" {
-                    
-                    EmptyView()
-                }else if tabs[selectedIndex].content == "AccountView" {
+                }else if tabs[selectedIndex].content == "ProfileView" {
                     
                     EmptyView()
                 }
