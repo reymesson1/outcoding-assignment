@@ -26,8 +26,7 @@ struct HomeView: View {
                         .shadow(radius: 10)
                 }
             }
-            CustomTabBar(selectedIndex: $isSelected)
-            
+            CustomTabBar(selectedIndex: $isSelected)            
         }
         .onAppear {
             self.viewModel.fetchCatImages()
