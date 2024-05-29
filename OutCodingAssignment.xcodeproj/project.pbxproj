@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D40939212BF6FD3B004F97BF /* CatViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40939202BF6FD3B004F97BF /* CatViewModelTests.swift */; };
+		D41AE1C12C0748520034DE57 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41AE1C02C0748520034DE57 /* CustomTabBar.swift */; };
+		D41AE1C32C0748850034DE57 /* CatHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41AE1C22C0748850034DE57 /* CatHomeView.swift */; };
 		D48581092BF6474E00886E7B /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48581082BF6474E00886E7B /* SplashScreen.swift */; };
 		D485810B2BF651F300886E7B /* SplashScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D485810A2BF651F300886E7B /* SplashScreenTests.swift */; };
 		D4E00CE62BF54084004B9E59 /* OutCodingAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E00CE52BF54084004B9E59 /* OutCodingAssignmentApp.swift */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		D40939202BF6FD3B004F97BF /* CatViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatViewModelTests.swift; sourceTree = "<group>"; };
+		D41AE1C02C0748520034DE57 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		D41AE1C22C0748850034DE57 /* CatHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatHomeView.swift; sourceTree = "<group>"; };
 		D48581082BF6474E00886E7B /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		D485810A2BF651F300886E7B /* SplashScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenTests.swift; sourceTree = "<group>"; };
 		D4E00CE22BF54084004B9E59 /* OutCodingAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutCodingAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +161,8 @@
 				D4E00D192BF5436E004B9E59 /* Template */,
 				D4E00D102BF542A4004B9E59 /* HomeView.swift */,
 				D4E00D172BF5434E004B9E59 /* CatDetailView.swift */,
+				D41AE1C02C0748520034DE57 /* CustomTabBar.swift */,
+				D41AE1C22C0748850034DE57 /* CatHomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -329,7 +335,9 @@
 				D4E00D182BF5434E004B9E59 /* CatDetailView.swift in Sources */,
 				D4E00D232BF5448D004B9E59 /* ViewModel.swift in Sources */,
 				D4E00D1D2BF543AB004B9E59 /* CatImage.swift in Sources */,
+				D41AE1C12C0748520034DE57 /* CustomTabBar.swift in Sources */,
 				D4E00D112BF542A4004B9E59 /* HomeView.swift in Sources */,
+				D41AE1C32C0748850034DE57 /* CatHomeView.swift in Sources */,
 				D4E00CE82BF54084004B9E59 /* ContentView.swift in Sources */,
 				D4E00D1B2BF54383004B9E59 /* RemoteImage.swift in Sources */,
 				D4E00CE62BF54084004B9E59 /* OutCodingAssignmentApp.swift in Sources */,
