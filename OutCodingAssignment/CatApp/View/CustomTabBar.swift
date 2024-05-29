@@ -24,10 +24,8 @@ struct CustomTabBar: View {
                 if tabs[selectedIndex].content == "CatHomeView" {
                     CatHomeView()
                 } else if tabs[selectedIndex].content == "MessageView" {
-                    
                     EmptyView()
                 }else if tabs[selectedIndex].content == "ProfileView" {
-                    
                     EmptyView()
                 }
                 Spacer()
