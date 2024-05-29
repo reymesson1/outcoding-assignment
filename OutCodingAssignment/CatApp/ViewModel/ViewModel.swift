@@ -10,7 +10,7 @@ import Foundation
 class CatViewModel: ObservableObject {
     @Published var catImages: [CatImage] = []
     
-    func fetchCatImages() {
+    func fetchCatImages(completion: @escaping () -> Void) {
         guard let url = URL(string: "https://cataas.com/api/cats?limit=10&skip=0") else { return }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
@@ -22,6 +22,7 @@ class CatViewModel: ObservableObject {
                 
                 DispatchQueue.main.async {
                     self.catImages = catData
+                    completion() // Call the completion handler when fetching is done
                 }
             } catch {
                 print("Error decoding JSON: \(error)")
