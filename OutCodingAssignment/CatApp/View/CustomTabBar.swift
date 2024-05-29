@@ -26,7 +26,7 @@ struct CustomTabBar: View {
                 } else if tabs[selectedIndex].content == "MessageView" {
                     EmptyView()
                 }else if tabs[selectedIndex].content == "ProfileView" {
-                    EmptyView()
+                    ProfileView()
                 }
                 Spacer()
                 HStack(spacing: 0) {
@@ -48,6 +48,10 @@ struct CustomTabBar: View {
                         y: -2)
             }
         }
+        .onAppear {
+                    // Ensure the localization manager's language is set properly
+                    LocalizationManager.shared.currentLanguage = LocalizationManager.shared.currentLanguage
+                }
     }
 }
 
@@ -71,12 +75,17 @@ struct TabBarButton: View {
                     .frame(width: 24, height: 24)
                     .foregroundColor(isSelected ? Color.red : Color.black)
                 
-                Text(tab.label)
+                Text(LocalizedStringKey("home_tab"))
                     .font(.footnote)
                     .foregroundColor(isSelected ? Color.red : Color.black)
                 
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
+        .onAppear {
+                    // Ensure the localization manager's language is set properly
+                    LocalizationManager.shared.currentLanguage = LocalizationManager.shared.currentLanguage
+                }
     }
+    
 }

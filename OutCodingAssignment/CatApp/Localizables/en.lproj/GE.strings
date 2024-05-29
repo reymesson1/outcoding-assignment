@@ -1,0 +1,13 @@
+/* 
+  GE.strings
+  OutCodingAssignment
+
+  Created by user258061 on 5/29/24.
+  
+*/
+"home_tab" = "Startseite";
+"messages_tab" = "Nachrichten";
+"profile_tab" = "Profil";
+"language_english" = "Englisch";
+"language_spanish" = "Spanisch";
+"language_german" = "Deutsch";

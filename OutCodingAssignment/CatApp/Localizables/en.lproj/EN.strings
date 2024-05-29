@@ -1,0 +1,13 @@
+/* 
+  EN.strings
+  OutCodingAssignment
+
+  Created by user258061 on 5/29/24.
+  
+*/
+"home_tab" = "Home";
+"messages_tab" = "Messages";
+"profile_tab" = "Profile";
+"language_english" = "English";
+"language_spanish" = "Spanish";
+"language_german" = "German";

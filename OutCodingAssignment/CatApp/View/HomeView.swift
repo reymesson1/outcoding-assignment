@@ -12,6 +12,7 @@ struct HomeView: View {
     
     var body: some View {
         CustomTabBar()
+            .environment(\.locale, .current)
             .navigationBarBackButtonHidden(true)
             .ignoresSafeArea()
     }
