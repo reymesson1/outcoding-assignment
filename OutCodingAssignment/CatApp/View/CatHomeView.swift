@@ -57,34 +57,34 @@ struct SkeletonItem: View {
         RoundedRectangle(cornerRadius: 8)
             .foregroundColor(Color.gray.opacity(0.4))
             .frame(height: 100)
-            .modifier(ShimmerAnimation(isShimmering: isShimmering))
-            .onAppear {
-                self.isShimmering = true
-            }
-            .onDisappear {
-                self.isShimmering = false
-            }
-    }
-}
-
-struct ShimmerAnimation: ViewModifier {
-    let isShimmering: Bool
-    
-    func body(content: Content) -> some View {
-        content
             .overlay(
-                LinearGradient(
-                    gradient: Gradient(colors: [Color.white.opacity(0), Color.white.opacity(0.5), Color.white.opacity(0)]),
-                    startPoint: .leading,
-                    endPoint: .trailing
-                )
-                .mask(content)
-                .opacity(isShimmering ? 1 : 0) // Control opacity to show/hide shimmer
-                .offset(x: -200) // Initial position off-screen
-                .animation(
-                    Animation.linear(duration: 1.1).repeatForever(autoreverses: false) // Adjust duration as needed
-                    .repeatForever(autoreverses: false) // Repeat shimmering effect
-                )
+                GeometryReader { geometry in
+                    RoundedRectangle(cornerRadius: 8)
+                        .fill(
+                            LinearGradient(
+                                gradient: Gradient(colors: [
+                                    Color.white.opacity(0),
+                                    Color.white.opacity(0.5),
+                                    Color.white.opacity(0)
+                                ]),
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                        .mask(
+                            RoundedRectangle(cornerRadius: 8)
+                                .frame(width: geometry.size.width * 0.3, height: geometry.size.height)
+                                .offset(x: self.isShimmering ? geometry.size.width : -geometry.size.width)
+                        )
+                        .opacity(self.isShimmering ? 1 : 0)
+                        .animation(
+                            Animation.linear(duration: 1.5) // Adjust duration as needed
+                            .repeatForever(autoreverses: false) // Repeat the shimmering effect
+                        )
+                }
             )
+            .onAppear {
+                self.isShimmering = true // Start shimmering animation
+            }
     }
 }
