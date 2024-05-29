@@ -19,14 +19,22 @@ struct CatHomeView: View {
             } else {
                 List(viewModel.catImages) { cat in
                     NavigationLink(destination: CatDetailView(catImage: cat)) {
-                        RemoteImage(url: cat.imageUrl, width: 100, height: 100)
-                            .overlay(
-                                Circle()
-                                    .stroke(Color.white, lineWidth: 4)
-                                    .frame(width: 200, height: 200)
-                            )
-                            .clipShape(Circle())
-                            .shadow(radius: 10)
+                        HStack {
+                            RemoteImage(url: cat.imageUrl, width: 100, height: 100)
+                                .overlay(
+                                    Circle()
+                                        .stroke(Color.white, lineWidth: 4)
+                                        .frame(width: 200, height: 200)
+                                )
+                                .clipShape(Circle())
+                                .shadow(radius: 10)
+                            
+                            Spacer() // Add Spacer to push TagsView to the right
+                            
+                            // Display tags here
+                            TagsView(tags: cat.tags ?? [])
+                        }
+                        .padding(.vertical, 8) // Add vertical padding for better spacing
                     }
                 }
             }
@@ -34,6 +42,29 @@ struct CatHomeView: View {
         .onAppear {
             self.viewModel.fetchCatImages {
                 self.isLoading = false
+            }
+        }
+    }
+}
+
+
+struct TagsView: View {
+    let tags: [String]?
+    
+    var body: some View {
+        if let tags = tags {
+            if !tags.isEmpty {
+                HStack {
+                    ForEach(tags, id: \.self) { tag in
+                        Text(tag)
+                            .font(.caption)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 4)
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(8)
+                    }
+                }
             }
         }
     }
@@ -78,13 +109,13 @@ struct SkeletonItem: View {
                         )
                         .opacity(self.isShimmering ? 1 : 0)
                         .animation(
-                            Animation.linear(duration: 1.5) // Adjust duration as needed
-                            .repeatForever(autoreverses: false) // Repeat the shimmering effect
+                            Animation.linear(duration: 1.5)
+                            .repeatForever(autoreverses: false)
                         )
                 }
             )
             .onAppear {
-                self.isShimmering = true // Start shimmering animation
+                self.isShimmering = true
             }
     }
 }
