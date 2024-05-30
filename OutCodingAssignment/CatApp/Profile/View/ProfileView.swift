@@ -34,7 +34,7 @@ struct ProfileView: View {
                             VStack(alignment: .leading, spacing: 2){
                                 Text("Change the language")
                                     .font(.system(size: 12))
-                                    .foregroundColor(Color.black)
+                                    .foregroundColor(Color.orange)
                                 Text(selectedLanguage)
                                     .font(.system(size: 16, weight: .regular))
                                     .foregroundColor( Color.black)
@@ -106,7 +106,6 @@ struct ProfileView: View {
 struct SingleSelectionList: View {
     
     public var recibedItems: [String]
-    //  public var title: String
     @Binding var selected: String
     var body: some View {
         VStack (alignment: .leading, spacing: 0) {
@@ -122,7 +121,6 @@ struct SingleSelectionList: View {
 }
 
 struct SelectionRow: View {
-    // Action
     typealias Action = (String) -> Void
     
     let title: String
@@ -137,20 +135,18 @@ struct SelectionRow: View {
             if title == selectedItem {
                 
                 Circle()
-                    .fill(Color(title == selectedItem ? "semantic-success-400" : "neutrals-100"))
+                    .fill(Color(title == selectedItem ? Color.gray : Color.gray))
                     .frame(width: 20, height: 20)
-                    .overlay(Circle().stroke(Color("neutrals-300"), lineWidth: 1))
+                    .overlay(Circle().stroke(Color.gray, lineWidth: 1))
                     .overlay {
                         Circle()
-                            .fill(Color("neutrals-100"))
+                            .fill(Color.orange)
                             .frame(width: 6)
                     }
             }
         }
-        // Allows tap in whole row
         .contentShape(Rectangle())
         .onTapGesture {
-            // tap
             self.selectedItem = self.title
         }
     }

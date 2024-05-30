@@ -69,11 +69,11 @@ struct TabBarButton: View {
                     .renderingMode(.template)
                     .resizable()
                     .frame(width: 24, height: 24)
-                    .foregroundColor(isSelected ? Color.red : Color.black)
+                    .foregroundColor(isSelected ? Color.orange : Color.black)
                 
                 Text(tab.label)
                     .font(.footnote)
-                    .foregroundColor(isSelected ? Color.red : Color.black)
+                    .foregroundColor(isSelected ? Color.orange : Color.black)
                 
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
