@@ -13,6 +13,7 @@
 		D426B8D92C08C5BA00ABB25F /* OfflineScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D426B8D82C08C5BA00ABB25F /* OfflineScreen.swift */; };
 		D426B8DB2C08C8A700ABB25F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D426B8DA2C08C8A700ABB25F /* NetworkManager.swift */; };
 		D426B8DE2C08C91600ABB25F /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = D426B8DD2C08C91600ABB25F /* Reachability */; };
+		D426B8E82C090F6000ABB25F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D426B8E72C090F6000ABB25F /* ProfileView.swift */; };
 		D48581092BF6474E00886E7B /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48581082BF6474E00886E7B /* SplashScreen.swift */; };
 		D485810B2BF651F300886E7B /* SplashScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D485810A2BF651F300886E7B /* SplashScreenTests.swift */; };
 		D4E00CE62BF54084004B9E59 /* OutCodingAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E00CE52BF54084004B9E59 /* OutCodingAssignmentApp.swift */; };
@@ -52,6 +53,7 @@
 		D41AE1C22C0748850034DE57 /* CatHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatHomeView.swift; sourceTree = "<group>"; };
 		D426B8D82C08C5BA00ABB25F /* OfflineScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineScreen.swift; sourceTree = "<group>"; };
 		D426B8DA2C08C8A700ABB25F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D426B8E72C090F6000ABB25F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D48581082BF6474E00886E7B /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		D485810A2BF651F300886E7B /* SplashScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenTests.swift; sourceTree = "<group>"; };
 		D4E00CE22BF54084004B9E59 /* OutCodingAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutCodingAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,48 @@
 				D426B8DA2C08C8A700ABB25F /* NetworkManager.swift */,
 			);
 			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		D426B8E02C090EF300ABB25F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D4E00D142BF5430E004B9E59 /* ViewModel */,
+				D4E00D152BF54320004B9E59 /* Model */,
+				D4E00D132BF54306004B9E59 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D426B8E12C090F0D00ABB25F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D426B8E42C090F3400ABB25F /* ViewModel */,
+				D426B8E32C090F2D00ABB25F /* Model */,
+				D426B8E22C090F2700ABB25F /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D426B8E22C090F2700ABB25F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D426B8E72C090F6000ABB25F /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D426B8E32C090F2D00ABB25F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D426B8E42C090F3400ABB25F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		D4E00CD92BF54084004B9E59 = {
@@ -201,10 +245,9 @@
 		D4E00D162BF5432A004B9E59 /* CatApp */ = {
 			isa = PBXGroup;
 			children = (
+				D426B8E12C090F0D00ABB25F /* Profile */,
+				D426B8E02C090EF300ABB25F /* Home */,
 				D426B8DF2C08CCA000ABB25F /* NetworkManager */,
-				D4E00D142BF5430E004B9E59 /* ViewModel */,
-				D4E00D152BF54320004B9E59 /* Model */,
-				D4E00D132BF54306004B9E59 /* View */,
 			);
 			path = CatApp;
 			sourceTree = "<group>";
@@ -354,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D426B8DB2C08C8A700ABB25F /* NetworkManager.swift in Sources */,
+				D426B8E82C090F6000ABB25F /* ProfileView.swift in Sources */,
 				D48581092BF6474E00886E7B /* SplashScreen.swift in Sources */,
 				D4E00D182BF5434E004B9E59 /* CatDetailView.swift in Sources */,
 				D4E00D232BF5448D004B9E59 /* ViewModel.swift in Sources */,
