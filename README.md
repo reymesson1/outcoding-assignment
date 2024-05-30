@@ -37,7 +37,7 @@ This SwiftUI app fetches cat images from the [Cataas API](https://cataas.com/) a
 - **Image Caching**: Implement image caching to improve performance and reduce redundant network requests.
 - **UI Enhancements**: Add more visually appealing UI elements and animations to enhance the user experience.
 - **Eskeleton**: It's when the data that's coming from the backend isn't ready yet. But you need to draw the place where the data will filled.
-
+- **Offline View**: If the user is offline the app is going to show a screen view says that there isn't internet connection.
 
 ## Future Improvements
 - **Error Handling**: Implement better error handling for cases such as network errors or failed data decoding.
