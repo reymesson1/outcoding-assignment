@@ -39,6 +39,7 @@ struct CatHomeView: View {
                 }
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .onAppear {
             self.viewModel.fetchCatImages {
                 self.isLoading = false
