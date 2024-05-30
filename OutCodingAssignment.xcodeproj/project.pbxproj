@@ -99,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D426B8DF2C08CCA000ABB25F /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				D426B8DA2C08C8A700ABB25F /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
 		D4E00CD92BF54084004B9E59 = {
 			isa = PBXGroup;
 			children = (
@@ -193,10 +201,10 @@
 		D4E00D162BF5432A004B9E59 /* CatApp */ = {
 			isa = PBXGroup;
 			children = (
+				D426B8DF2C08CCA000ABB25F /* NetworkManager */,
 				D4E00D142BF5430E004B9E59 /* ViewModel */,
 				D4E00D152BF54320004B9E59 /* Model */,
 				D4E00D132BF54306004B9E59 /* View */,
-				D426B8DA2C08C8A700ABB25F /* NetworkManager.swift */,
 			);
 			path = CatApp;
 			sourceTree = "<group>";
