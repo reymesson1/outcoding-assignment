@@ -135,12 +135,12 @@ struct SelectionRow: View {
             if title == selectedItem {
                 
                 Circle()
-                    .fill(Color(title == selectedItem ? Color.gray : Color.gray))
+                    .fill(Color(title == selectedItem ? Color.orange : Color.gray))
                     .frame(width: 20, height: 20)
-                    .overlay(Circle().stroke(Color.gray, lineWidth: 1))
+                    .overlay(Circle().stroke(Color.orange, lineWidth: 1))
                     .overlay {
                         Circle()
-                            .fill(Color.orange)
+                            .fill(Color.gray)
                             .frame(width: 6)
                     }
             }
