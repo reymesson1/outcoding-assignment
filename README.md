@@ -5,6 +5,7 @@
 This SwiftUI app fetches cat images from the [Cataas API](https://cataas.com/) and displays them in a list. Users can view each cat image in detail, including tags associated with the image.
 
 ![image](https://github.com/reymesson1/outcoding-assignment/assets/30162161/63ac6375-68c9-4729-97d7-b197b9bbb7ac)
+![image](https://github.com/reymesson1/outcoding-assignment/assets/30162161/8a6280b9-d73f-48de-8e46-47cfe2793b7f)
 
 
 ## Features
@@ -32,15 +33,16 @@ This SwiftUI app fetches cat images from the [Cataas API](https://cataas.com/) a
 4. Explore the list of cat images fetched from the Cataas API.
 5. Tap on a cat image to view its details, including tags.
 
+## Recently Implementation
+- **Image Caching**: Implement image caching to improve performance and reduce redundant network requests.
+- **UI Enhancements**: Add more visually appealing UI elements and animations to enhance the user experience.
+- **Eskeleton**: It's when the data that's coming from the backend isn't ready yet. But you need to draw the place where the data will filled.
+
+
 ## Future Improvements
 - **Error Handling**: Implement better error handling for cases such as network errors or failed data decoding.
 - **Pagination**: Implement pagination to fetch and display more cat images as the user scrolls.
-- **Image Caching**: Implement image caching to improve performance and reduce redundant network requests.
-- **UI Enhancements**: Add more visually appealing UI elements and animations to enhance the user experience.
 - **Localizable**: Add more languages to show the app more internationality and give the user a better experience.
-
-- **Eskeleton**: It's when the data that's coming from the backend isn't ready yet. But you need to draw the place where the data will filled.
-
 - **Factory method** In order to delegate the responsibility of create a component we are going to use this design pattern method and also to follow the SOLID principle rules to apply the dependency injection.
 
 
