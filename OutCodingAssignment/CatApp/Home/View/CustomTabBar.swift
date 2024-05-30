@@ -17,7 +17,7 @@ struct CustomTabBar: View {
         TabBarItem(icon: "fa-cat-head", label: "Profile", content: "ProfileView")
     ]
 
-    var body: some View {
+    var body: some View {	
         ZStack {
             Color.white.edgesIgnoringSafeArea(.all)
             VStack(spacing: 0) {
@@ -26,7 +26,7 @@ struct CustomTabBar: View {
                 } else if tabs[selectedIndex].content == "MessageView" {
                     EmptyView()
                 }else if tabs[selectedIndex].content == "ProfileView" {
-                    EmptyView()
+                    ProfileView()
                 }
                 Spacer()
                 HStack(spacing: 0) {
