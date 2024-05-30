@@ -30,15 +30,11 @@ struct CatDetailView: View {
             Spacer()
         }
     }
-    
     private enum Constants {
-        
         static let width : CGFloat = 200
         static let height : CGFloat = 200
         static let radius : CGFloat = 10
         static let lineWidth : CGFloat = 10
         static let whiteColor = Color.white
-        
-        
     }
 }

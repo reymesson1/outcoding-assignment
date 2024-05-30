@@ -8,10 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var networkManager = NetworkManager()
+
     var body: some View {
         NavigationView {
-            SplashScreen()
-        }.navigationViewStyle(StackNavigationViewStyle())
+            if networkManager.isConnected {
+                SplashScreen()
+            } else {
+                OfflineScreen()
+            }
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .onReceive(NotificationCenter.default.publisher(for: .reachabilityChanged)) { _ in
+            self.networkManager.updateConnection()
+        }
     }
 }
 
