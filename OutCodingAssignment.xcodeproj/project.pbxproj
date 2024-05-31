@@ -14,6 +14,7 @@
 		D426B8DB2C08C8A700ABB25F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D426B8DA2C08C8A700ABB25F /* NetworkManager.swift */; };
 		D426B8DE2C08C91600ABB25F /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = D426B8DD2C08C91600ABB25F /* Reachability */; };
 		D426B8E82C090F6000ABB25F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D426B8E72C090F6000ABB25F /* ProfileView.swift */; };
+		D447CC5D2C09FFE70026DC82 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = D447CC5C2C09FFE70026DC82 /* Localizable.xcstrings */; };
 		D48581092BF6474E00886E7B /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48581082BF6474E00886E7B /* SplashScreen.swift */; };
 		D485810B2BF651F300886E7B /* SplashScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D485810A2BF651F300886E7B /* SplashScreenTests.swift */; };
 		D4E00CE62BF54084004B9E59 /* OutCodingAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E00CE52BF54084004B9E59 /* OutCodingAssignmentApp.swift */; };
@@ -54,6 +55,7 @@
 		D426B8D82C08C5BA00ABB25F /* OfflineScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineScreen.swift; sourceTree = "<group>"; };
 		D426B8DA2C08C8A700ABB25F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D426B8E72C090F6000ABB25F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D447CC5C2C09FFE70026DC82 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		D48581082BF6474E00886E7B /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		D485810A2BF651F300886E7B /* SplashScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenTests.swift; sourceTree = "<group>"; };
 		D4E00CE22BF54084004B9E59 /* OutCodingAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutCodingAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +185,7 @@
 				D4E00CEC2BF54086004B9E59 /* Preview Content */,
 				D48581082BF6474E00886E7B /* SplashScreen.swift */,
 				D426B8D82C08C5BA00ABB25F /* OfflineScreen.swift */,
+				D447CC5C2C09FFE70026DC82 /* Localizable.xcstrings */,
 			);
 			path = OutCodingAssignment;
 			sourceTree = "<group>";
@@ -349,6 +352,8 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				de,
 			);
 			mainGroup = D4E00CD92BF54084004B9E59;
 			packageReferences = (
@@ -372,6 +377,7 @@
 			files = (
 				D4E00CEE2BF54086004B9E59 /* Preview Assets.xcassets in Resources */,
 				D4E00CEA2BF54086004B9E59 /* Assets.xcassets in Resources */,
+				D447CC5D2C09FFE70026DC82 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +579,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OutCodingAssignment/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -610,6 +617,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OutCodingAssignment/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

@@ -12,7 +12,7 @@ struct ProfileView: View {
     @State private var isExpanded = false
     @State private var selectedLanguage = "English"
     
-    let languages = ["English", "Spanish", "German", "French", "Italian", "Portuguese"]
+    let languages = ["English", "Spanish", "German", "French", "Italian"]
     
     var body: some View {
         
@@ -35,7 +35,7 @@ struct ProfileView: View {
                                 Text("Change the language")
                                     .font(.system(size: 12))
                                     .foregroundColor(Color.orange)
-                                Text(selectedLanguage)
+                                Text(NSLocalizedString(selectedLanguage, comment: ""))
                                     .font(.system(size: 16, weight: .regular))
                                     .foregroundColor( Color.black)
                                     .autocapitalization(.none)
@@ -112,7 +112,7 @@ struct SingleSelectionList: View {
             
             List {
                 ForEach(recibedItems, id: \.self) { item in
-                    SelectionRow(title: item, selectedItem: $selected)
+                    SelectionRow(title: NSLocalizedString(item, comment: ""), selectedItem: $selected)
                 }
             }
             .listStyle(.inset)
