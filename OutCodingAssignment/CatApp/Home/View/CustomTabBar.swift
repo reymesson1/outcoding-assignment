@@ -12,9 +12,9 @@ struct CustomTabBar: View {
     @State private var selectedIndex = 0
     
     let tabs = [
-        TabBarItem(icon: "fa-cat-one", label: "Home", content: "CatHomeView"),
-        TabBarItem(icon: "fa-message", label: "Messages", content: "MessageView"),
-        TabBarItem(icon: "fa-cat-head", label: "Profile", content: "ProfileView")
+        TabBarItem(icon: "fa-cat-one", label: NSLocalizedString("Home", comment: ""), content: "CatHomeView"),
+        TabBarItem(icon: "fa-message", label: NSLocalizedString("Message", comment: ""), content: "MessageView"),
+        TabBarItem(icon: "fa-cat-head", label: NSLocalizedString("Profile", comment: ""), content: "ProfileView")
     ]
 
     var body: some View {	
