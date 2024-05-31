@@ -10,9 +10,9 @@ import SwiftUI
 struct ProfileView: View {
     
     @State private var isExpanded = false
-    @State private var selectedLanguage = "English"
+    @State private var selectedLanguage = UserDefaults.standard.string(forKey: "AppLanguage") ?? "English"
     
-    let languages = ["English", "Spanish", "German", "French", "Italian"]
+    let languages = ["English", "Spanish", "German", "France", "Italian"]
     
     var body: some View {
         
@@ -61,16 +61,32 @@ struct ProfileView: View {
                             .frame(height: 200)
                             .buttonStyle(.plain)
                             .onChange(of: selectedLanguage) { newValue in
-                                if newValue == "English" {
+                                if newValue == "English" ||
+                                    newValue == "Ingles" ||
+                                    newValue == "Englisch" {
                                     print("Select English")
-                                }else if newValue == "Spanish" {
+                                    UserDefaults.standard.set(newValue, forKey: "AppLanguage")
+                                }else if newValue == "Spanish" ||
+                                         newValue == "Español" ||
+                                         newValue == "Spanisch" {
                                     print("Select Spanish")
-                                }else if newValue == "Italian" {
+                                    UserDefaults.standard.set(newValue, forKey: "AppLanguage")
+                                }else if newValue == "Italian" ||
+                                         newValue == "Italiano" ||
+                                         newValue == "Italienisch" {
                                     print("Select Italian")
-                                }else if newValue == "French" {
+                                    UserDefaults.standard.set(newValue, forKey: "AppLanguage")
+                                    UserDefaults.standard.synchronize()
+                                }else if newValue == "France" ||
+                                         newValue == "Frances" ||
+                                         newValue == "Frankreich" {
                                     print("Select French")
-                                }else if newValue == "German" {
+                                    UserDefaults.standard.set(newValue, forKey: "AppLanguage")
+                                }else if newValue == "German" ||
+                                         newValue == "Aleman" ||
+                                         newValue == "Deutsch" {
                                     print("Select German")
+                                    UserDefaults.standard.set(newValue, forKey: "AppLanguage")
                                 }
                                 
                                 withAnimation(.easeInOut(duration: 1).delay(0.1)) {
