@@ -66,27 +66,34 @@ struct ProfileView: View {
                                     newValue == "Englisch" {
                                     print("Select English")
                                     UserDefaults.standard.set(newValue, forKey: "AppLanguage")
+                                    UserDefaults.standard.set("en", forKey: "AppSystem")
                                 }else if newValue == "Spanish" ||
                                          newValue == "Español" ||
                                          newValue == "Spanisch" {
                                     print("Select Spanish")
                                     UserDefaults.standard.set(newValue, forKey: "AppLanguage")
+                                    UserDefaults.standard.set("es", forKey: "AppSystem")
+
                                 }else if newValue == "Italian" ||
                                          newValue == "Italiano" ||
                                          newValue == "Italienisch" {
                                     print("Select Italian")
                                     UserDefaults.standard.set(newValue, forKey: "AppLanguage")
-                                    UserDefaults.standard.synchronize()
+                                    UserDefaults.standard.set("it", forKey: "AppSystem")
                                 }else if newValue == "France" ||
                                          newValue == "Frances" ||
                                          newValue == "Frankreich" {
                                     print("Select French")
                                     UserDefaults.standard.set(newValue, forKey: "AppLanguage")
+                                    UserDefaults.standard.set("fr", forKey: "AppSystem")
+
                                 }else if newValue == "German" ||
                                          newValue == "Aleman" ||
                                          newValue == "Deutsch" {
                                     print("Select German")
                                     UserDefaults.standard.set(newValue, forKey: "AppLanguage")
+                                    UserDefaults.standard.set("de", forKey: "AppSystem")
+
                                 }
                                 
                                 withAnimation(.easeInOut(duration: 1).delay(0.1)) {

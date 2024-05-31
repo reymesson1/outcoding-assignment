@@ -14,6 +14,7 @@ struct ContentView: View {
         NavigationView {
             if networkManager.isConnected {
                 SplashScreen()
+                    .environment(\.locale, Locale(identifier: UserDefaults.standard.string(forKey: "AppSystem") ?? "it"))
             } else {
                 OfflineScreen()
             }

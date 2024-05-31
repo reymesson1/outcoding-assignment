@@ -354,6 +354,8 @@
 				Base,
 				es,
 				de,
+				it,
+				fr,
 			);
 			mainGroup = D4E00CD92BF54084004B9E59;
 			packageReferences = (

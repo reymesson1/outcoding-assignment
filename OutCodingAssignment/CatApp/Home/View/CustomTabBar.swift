@@ -33,7 +33,7 @@ struct CustomTabBar: View {
                     ForEach(0..<tabs.count) { index in
                         TabBarButton(tab: tabs[index],
                                      isSelected: index == selectedIndex) {
-                            selectedIndex = index
+                            selectedIndex = index	
                         }
                                      .frame(maxWidth: .infinity)
                     }
